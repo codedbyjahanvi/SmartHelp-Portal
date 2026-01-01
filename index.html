@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Website Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🌐 AI Website Explorer</h1>
+    <p class="subtitle">
+      Paste any website link and ask questions powered by Google Gemini
+    </p>
+
+    <input
+      type="text"
+      id="url"
+      placeholder="🔗 Paste website URL (e.g. https://www.college.edu)"
+    />
+
+    <textarea
+      id="question"
+      placeholder="❓ Ask something about this website..."
+    ></textarea>
+
+    <button onclick="askAI()">Ask Gemini</button>
+
+    <div class="answer-box" id="answer">
+      💡 AI response will appear here
+    </div>
+
+    <p class="footer">
+      Google Technology Used: <b>Google Gemini API</b>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
